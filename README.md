@@ -69,11 +69,11 @@ The function wrapper adds the following dimensions to all data points sent to Si
 | azure_region  | Azure Region where the function is executed  |
 | azure_function_name  | Name of the function |
 | azure_resource_name  | Name of the function app where the function is running |
-| function_wrapper_version  | SignalFx function wrapper qualifier (e.g. signalfx-azurefunction-0.0.11) |
+| function_wrapper_version  | SignalFx Function Wrapper qualifier (e.g. signalfx-azurefunction-0.0.11) |
 | is_Azure_Function  | Used to differentiate between Azure App Service and Azure Function metrics |
 | metric_source | The literal value of 'azure_function_wrapper' |
 
-### Sending a custom metric from the Azure function
+### Sending a custom metric from the Azure Function
 ```java
 // construct data point builder
 SignalFxProtocolBuffers.DataPoint.Builder builder =
