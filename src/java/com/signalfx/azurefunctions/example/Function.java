@@ -4,6 +4,7 @@ import java.util.*;
 import java.io.IOException;
 import com.microsoft.azure.serverless.functions.annotation.*;
 import com.microsoft.azure.serverless.functions.*;
+import com.signalfx.azurefunctions.wrapper.MetricWrapper;
 import com.signalfx.metrics.protobuf.SignalFxProtocolBuffers;
 
 /**

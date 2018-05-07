@@ -54,7 +54,7 @@ Set the Azure Function environment variables as follows:
 
 ### Metrics and dimensions sent by the wrapper
 
-The Azure Function wrapper sends the following metrics to SignalFx:
+The Azure Function Wrapper sends the following metrics to SignalFx:
 
 | Metric Name  | Type | Description |
 | ------------- | ------------- | ---|
@@ -66,7 +66,7 @@ The function wrapper adds the following dimensions to all data points sent to Si
 
 | Dimension | Description |
 | ------------- | ---|
-| azure_region  | Azure region where the function is executed  |
+| azure_region  | Azure Region where the function is executed  |
 | azure_function_name  | Name of the function |
 | azure_resource_name  | Name of the function app where the function is running |
 | function_wrapper_version  | SignalFx function wrapper qualifier (e.g. signalfx-azurefunction-0.0.11) |
