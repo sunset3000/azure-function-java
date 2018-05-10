@@ -24,11 +24,15 @@ The SignalFx Java Azure Function Wrapper is a wrapper around an Azure Function, 
 
 Wrap the code inside the handler as followed:
 ```java
+import com.signalfx.azurefunctions.wrapper.MetricWrapper;
+
 @FunctionName("Hello-SignalFx")
 public HttpResponseMessage<String> hello(HttpRequestMessage<Optional<String>> request,
                 final ExecutionContext context) {
         MetricWrapper wrapper = new MetricWrapper(context);
+            ...
             // your code
+            ...
         } catch (Exception e) {
           wrapper.error();
         } finally {
