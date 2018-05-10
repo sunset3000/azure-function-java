@@ -6,7 +6,7 @@
     <groupId>com.signalfx.public</groupId>
     <artifactId>signalfx-azure-functions</artifactId>
     <packaging>jar</packaging>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>SignalFx Azure Functions Wrapper</name>
     <description>
         SignalFx Azure Functions Wrapper
