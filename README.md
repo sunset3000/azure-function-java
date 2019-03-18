@@ -22,6 +22,14 @@ The SignalFx Java Azure Function Wrapper is a wrapper around an Azure Function, 
 
 ### Using the Metric Wrapper
 
+#### Configuring the ingest endpoint
+
+By default, this function wrapper will send to the `us0` realm. If you are
+not in this realm you will need to set the `SIGNALFX_API_HOSTNAME` environment
+variable to the correct realm ingest endpoint (https://ingest.{REALM}.signalfx.com).
+To determine what realm you are in, check your profile page in the SignalFx
+web application (click the avatar in the upper right and click My Profile).
+
 Wrap the code inside the handler as followed:
 ```java
 import com.signalfx.azurefunctions.wrapper.MetricWrapper;
